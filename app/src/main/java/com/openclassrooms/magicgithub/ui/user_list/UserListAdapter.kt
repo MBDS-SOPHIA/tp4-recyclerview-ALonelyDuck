@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.openclassrooms.magicgithub.R
 import com.openclassrooms.magicgithub.model.User
 import com.openclassrooms.magicgithub.utils.UserDiffCallback
+import java.util.Collections
 
 class UserListAdapter(  // FOR CALLBACK ---
     private val callback: Listener
@@ -16,6 +17,7 @@ class UserListAdapter(  // FOR CALLBACK ---
 
     interface Listener {
         fun onClickDelete(user: User)
+        fun onItemMoved(fromPosition: Int, toPosition: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListUserViewHolder {
@@ -27,6 +29,15 @@ class UserListAdapter(  // FOR CALLBACK ---
 
     override fun onBindViewHolder(holder: ListUserViewHolder, position: Int) {
         holder.bind(users[position], callback)
+    }
+
+    fun onItemMove(fromPosition: Int, toPosition: Int) {
+        val users = users as MutableList<User>
+        val temp = users[fromPosition]
+        users[fromPosition] = users[toPosition]
+        users[toPosition] = temp
+        notifyItemMoved(fromPosition, toPosition)
+        callback.onItemMoved(fromPosition, toPosition)
     }
 
     override fun getItemCount(): Int {

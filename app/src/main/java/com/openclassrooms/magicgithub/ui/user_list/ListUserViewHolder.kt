@@ -4,6 +4,7 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -23,6 +24,14 @@ class ListUserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             .into(avatar)
         username.text = user.login
         deleteButton.setOnClickListener { callback.onClickDelete(user) }
+
+        // Change background color based on active state
+        val backgroundColor = if (user.isActive) {
+            ContextCompat.getColor(itemView.context, android.R.color.white)
+        } else {
+            ContextCompat.getColor(itemView.context, android.R.color.holo_red_light)
+        }
+        itemView.setBackgroundColor(backgroundColor)
     }
 
 }

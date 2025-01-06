@@ -49,7 +49,19 @@ Tout est maintenant fonctionnel.
 3. Commit et push les derniers changements. 
 
 ## Etape 3 : Améliorer l'application
-1. Utiliser le viewbinding pour référencer les éléments de vues dans l'acitivité et l'adapter
+1. Utiliser le viewbinding pour référencer les éléments de vues dans l'activité et l'adapter
+
+https://developer.android.com/topic/libraries/view-binding?hl=fr
+
+```
+android {
+    ...
+    buildFeatures {
+        viewBinding = true
+    }
+}
+```
+
 2. Implémenter une fonctionnalité permattant d'activer ou désactiver un utilisateur en swipant la cellule à gauche ou à droite;
 >> Quand l'utiliateur est inactif (i.e. désactivé) on met un background 'rouge' sur la cellule quand il est activé on met un background blanc.
 3. Adapter les tests unitaires pour prendre en compte les derniers changements (i.e. actif vs inactif)
