@@ -7,34 +7,34 @@ object FakeApiServiceGenerator {
 
     @JvmField
     var FAKE_USERS = mutableListOf(
-        User("001", "Jake", "https://api.adorable.io/AVATARS/512/1.png"),
-        User("002", "Paul", "https://api.adorable.io/AVATARS/512/2.png"),
-        User("003", "Phil", "https://api.adorable.io/AVATARS/512/3.png"),
-        User("004", "Guillaume", "https://api.adorable.io/AVATARS/512/4.png"),
-        User("005", "Francis", "https://api.adorable.io/AVATARS/512/5.png"),
-        User("006", "George", "https://api.adorable.io/AVATARS/512/6.png"),
-        User("007", "Louis", "https://api.adorable.io/AVATARS/512/7.png"),
-        User("008", "Mateo", "https://api.adorable.io/AVATARS/512/8.png"),
-        User("009", "April", "https://api.adorable.io/AVATARS/512/9.png"),
-        User("010", "Louise", "https://api.adorable.io/AVATARS/512/10.png"),
-        User("011", "Elodie", "https://api.adorable.io/AVATARS/512/11.png"),
-        User("012", "Helene", "https://api.adorable.io/AVATARS/512/12.png"),
-        User("013", "Fanny", "https://api.adorable.io/AVATARS/512/13.png"),
-        User("014", "Laura", "https://api.adorable.io/AVATARS/512/14.png"),
-        User("015", "Gertrude", "https://api.adorable.io/AVATARS/512/15.png"),
-        User("016", "Chloé", "https://api.adorable.io/AVATARS/512/16.png"),
-        User("017", "April", "https://api.adorable.io/AVATARS/512/17.png"),
-        User("018", "Marie", "https://api.adorable.io/AVATARS/512/18.png"),
-        User("019", "Henri", "https://api.adorable.io/AVATARS/512/19.png"),
-        User("020", "Rémi", "https://api.adorable.io/AVATARS/512/20.png")
+        User("001", "Jake", "https://random-d.uk/api/1.jpg"),
+        User("002", "Paul", "https://random-d.uk/api/2.jpg"),
+        User("003", "Phil", "https://random-d.uk/api/3.jpg"),
+        User("004", "Guillaume", "https://random-d.uk/api/4.jpg"),
+        User("005", "Francis", "https://random-d.uk/api/5.jpg"),
+        User("006", "George", "https://random-d.uk/api/6.jpg"),
+        User("007", "Louis", "https://random-d.uk/api/7.jpg"),
+        User("008", "Mateo", "https://random-d.uk/api/8.jpg"),
+        User("009", "April", "https://random-d.uk/api/9.jpg"),
+        User("010", "Louise", "https://random-d.uk/api/10.jpg"),
+        User("011", "Elodie", "https://random-d.uk/api/11.jpg"),
+        User("012", "Helene", "https://random-d.uk/api/12.jpg"),
+        User("013", "Fanny", "https://random-d.uk/api/13.jpg"),
+        User("014", "Laura", "https://random-d.uk/api/14.jpg"),
+        User("015", "Gertrude", "https://random-d.uk/api/15.jpg"),
+        User("016", "Chloé", "https://random-d.uk/api/16.jpg"),
+        User("017", "April", "https://random-d.uk/api/17.jpg"),
+        User("018", "Marie", "https://random-d.uk/api/18.jpg"),
+        User("019", "Henri", "https://random-d.uk/api/19.jpg"),
+        User("020", "Rémi", "https://random-d.uk/api/20.jpg")
     )
 
     @JvmField
     var FAKE_USERS_RANDOM = Arrays.asList(
-        User("021", "Lea", "https://api.adorable.io/AVATARS/512/21.png"),
-        User("022", "Geoffrey", "https://api.adorable.io/AVATARS/512/22.png"),
-        User("023", "Simon", "https://api.adorable.io/AVATARS/512/23.png"),
-        User("024", "André", "https://api.adorable.io/AVATARS/512/24.png"),
-        User("025", "Leopold", "https://api.adorable.io/AVATARS/512/25.png")
+        User("021", "Lea", "https://random-d.uk/api/21.jpg"),
+        User("022", "Geoffrey", "https://random-d.uk/api/22.jpg"),
+        User("023", "Simon", "https://random-d.uk/api/23.jpg"),
+        User("024", "André", "https://random-d.uk/api/24.jpg"),
+        User("025", "Leopold", "https://random-d.uk/api/25.jpg")
     )
 }

@@ -42,6 +42,10 @@ qui avait aussi des methodes à compléter.
 ### Etape 2: Gestion des images de profile
 1. Exécutez l'application sur un téléphone ou un émulateur
 2. Les images de profile ne s'affichent pas, trouvez et corrigez l'erreur
+
+L'avatarUrl dans FakeApiServiceGenerator n'était plus bon, j'ai donc changé l'url pour une autre image.
+Tout est maintenant fonctionnel.
+
 3. Commit et push les derniers changements. 
 
 ## Etape 3 : Améliorer l'application
