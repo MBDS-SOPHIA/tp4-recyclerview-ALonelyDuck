@@ -55,4 +55,22 @@ class UserRepositoryTest {
         userRepository.deleteUser(userToDelete)
         Assert.assertFalse(userRepository.getUsers().contains(userToDelete))
     }
+
+    @Test
+    fun toggleUserActivationWithSuccess() {
+        val user = userRepository.getUsers()[0]
+        val initialActivationState = user.isActive
+        userRepository.toggleUserActivation(0)
+        val userUpdated = userRepository.getUsers()[0]
+        assertEquals(userUpdated.isActive, !initialActivationState)
+    }
+
+    @Test
+    fun swapUsersWithSuccess() {
+        val user1 = userRepository.getUsers()[0]
+        val user2 = userRepository.getUsers()[1]
+        userRepository.swapUsers(0, 1)
+        assertEquals(userRepository.getUsers()[0], user2)
+        assertEquals(userRepository.getUsers()[1], user1)
+    }
 }
