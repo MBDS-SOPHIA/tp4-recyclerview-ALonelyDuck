@@ -9,12 +9,33 @@ Dans ce TP vous allez apprendre à manipuler les recyclerviews dans une applicat
 4. Faire un commit puis push sur Github
 5. Consulter le repo du projet sur Github (votre Github bien sure), que remarquez-vous ? Vous devriez avoir reçu un mail...
 
+Il y a un workflow Github Action qui est configuré pour exécuter les tests unitaires et d'interfaces.
+Ces tests échouent pour le moment.
+
 ### Etape 1: Fixer les tests
 1. Exécuter les tests  
    -  Lancer les tests unitaires
    -  Lancer les tests d'interfaces
 2. Que remarquez-vous ? 
+
+```
+UserRepositoryTest > generateRandomUserWithSuccess FAILED
+kotlin.NotImplementedError at UserRepositoryTest.kt:41
+
+UserRepositoryTest > getUsersWithSuccess FAILED
+kotlin.NotImplementedError at UserRepositoryTest.kt:31
+
+UserRepositoryTest > deleteUserWithSuccess FAILED
+kotlin.NotImplementedError at UserRepositoryTest.kt:54
+
+3 tests completed, 3 failed
+```
+
 3. Corrigner les erreurs
+
+J'ai complété les methodes TODO de UserRepository.kt, classe qui dépend de FakeApiService.kt
+qui avait aussi des methodes à compléter.
+
 4. Relancer les tests (unitaires et d'interfaces)
 6. Commit et push vos changements. Logiquement, vous devriez avoir un flag vert sur le repo. 
 
