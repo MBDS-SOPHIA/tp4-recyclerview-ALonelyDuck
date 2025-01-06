@@ -70,4 +70,12 @@ android {
 ## Bonus 
 - Modifier les tests d'inferfaces
 
+C'est impossible, j'y arrive pas.
+https://github.com/android/testing-samples/blob/main/ui/espresso/RecyclerViewSample/app/src/androidTest/java/com/example/android/testing/espresso/RecyclerViewSample/RecyclerViewSampleTest.java
+https://github.com/android/testing-samples/tree/main/ui/espresso/RecyclerViewSample
+https://stackoverflow.com/questions/47940330/android-espresso-how-to-confirm-swipeleft-actually-swiped
+https://developer.android.com/reference/androidx/test/espresso/action/GeneralSwipeAction
+
+J'abandonne le bonus.
+
 # Contributeurs
